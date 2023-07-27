@@ -66,13 +66,13 @@
           </div>
         </div >
         <div class="relative flex justify-end lg:pr-5"> 
-          <input type="text" placeholder="Search" class="input input-bordered will-change-auto md:w-auto rounded-full bg-white h-9 " />
+          <input type="text" placeholder="Search Here" class="input  w-auto md:w-auto rounded-full bg-white h-9 border-none hover:ring-orange-900 hover:ring-2" />
           <a class="absolute mr-4" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
         
       </div>
-      <div class=" flex justify-between lg:hidden bg-white rounded-full items-center h-20">
-        <div class="navbar-start flex items-center">
+      <div class=" flex justify-between px-4 lg:hidden bg-white rounded-full items-center h-20">
+        <div class="navbar-start flex items-center z-[10]">
           <img class="lg:h-8" src="images/logo.png" alt="">
           <a class="btn btn-ghost font-bold normal-case text-[#121212] text-4xl">Fruit Brust</a>
         </div>
@@ -80,27 +80,28 @@
           <label tabindex="0" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </label>
-          <div tabindex="0" class="menu menu-lg dropdown-content -mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <div tabindex="0" class="menu menu-lg dropdown-content mt-10 z-[1] p-2 shadow bg-slate-300 rounded-box w-52">
             <a class="hover:text-gray-700 mx-3" href="">Home</a>
             <a class="hover:text-gray-700 mx-3" href="">About Us</a>
             <a class="hover:text-gray-700 mx-3" href="">Shop</a>
             <a class="hover:text-gray-700 mx-3" href="">All Fruits</a>
-            <div>
-              <a href=""><input type="text" placeholder="Search Here" class="input input-bordered w-auto md:w-auto rounded-full bg-white" /></a>
+            <div class="relative flex justify-between lg:pr-5"> 
+              <input type="text" placeholder="Search Here" class="input input-bordered hover:ring-orange-600 hover:ring-2 w-3/4 md:w-auto rounded-full bg-white h-9 " />
+              <a class="absolute ml-28 mt-2" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
           </div>
         </div>
       </div>
     </nav>
     <!-- Bannar section with carousel  -->
-    <section>
+    <section class="relative">
       <div class="carousel my-10 rounded w-full">
         <!-- slide 1 -->
         <div id="slide1" class="carousel-item relative h-60 md:h-96 w-full">
-          <div class="hero " style="background-image: url(images/banner1.png);">
+          <div class="hero" style="background-image: url(images/banner1.png);">
             <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-xs md:max-w-md">
+            <div class="hero-content text-neutral-content">
+              <div class="max-w-xs md:max-w-md text-center">
                 <h1 class="mb-5 text-3xl lg:text-5xl text-[#FFFFFf] font-extrabold">Exotic tastes at your doorstep</h1>
                 <p class="mb-5 text-sm text-[#FFFFFF]">We supply highly quality organic products</p>
                 <button class="rounded-lg px-8 py-3 bg-[#F85559] text-[#FFFFFF]">Shop Now</button>
@@ -164,12 +165,34 @@
           </div>
         </div>
       </div>
+      <div class="absolute hidden lg:mx-44 lg:-mt-28 lg:flex rounded-lg bg-slate-50 w-max shadow-xl">
+        <div class="flex flex-col items-center py-4 mx-3">
+          <img src="images/fruit1.png" alt="Blue barry">
+          <h3 class="pt-2 text-lg text-[#121212CC] font-medium">Blue Barry</h3>
+        </div>
+        <div class="flex flex-col items-center py-4 mx-3">
+          <img src="images/fruit2.png" alt="orange...">
+          <h3 class="pt-2 text-lg text-[#121212CC] font-medium">Orange</h3>
+        </div>
+        <div class="flex flex-col items-center py-4 mx-3">
+          <img src="images/fruit3.png" alt="mango...">
+          <h3 class="pt-2 text-lg text-[#121212CC] font-medium">Mango</h3>
+        </div>
+        <div class="flex flex-col items-center py-4 mx-3">
+          <img src="images/fruit4.png" alt="StrawBarry">
+          <h3 class="pt-2 text-lg text-[#121212CC] font-medium">StrawBarry</h3>
+        </div>
+        <div class="flex flex-col items-center py-4 mx-3">
+          <img src="images/fruit5.png" alt="Pomegranate....">
+          <h3 class="pt-2 text-lg text-[#121212CC] font-medium">Pomegranate</h3>
+        </div>
+      </div>
     </section>
   </header>
 
   <!-- Main Section -->
 
-  <main class="pl-2 pr-2 lg:pl-44 lg:pr-44">
+  <main class="pl-2 pr-2 lg:mt-20 lg:pl-44 lg:pr-44">
     <!-- Deal Of the day section -->
     <section>
       <!-- Heading And Countdown -->
@@ -387,9 +410,9 @@
     </section>
     <!-- Team Section -->
     <section>
-      <div class="hero" style="background-image: url(images/team.png);">
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content">
+      <div class="hero rounded-xl" style="background-image: url(images/team.png);">
+        <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+        <div class="hero-content text-center text-neutral-content lg:py-24">
           <div class="text-center">
             <h1 class="mb-5 text-3xl lg:text-5xl text-[#FFFFFf] font-extrabold">Meet the team section</h1>
             <p class="mb-10 text-base font-medium text-[#FFFFFF]">Contrary to popular belief, is not simply random text.
@@ -397,7 +420,7 @@
             <div class="grid gap-12 md:grid-cols-4 justify-center">
               <div class="w-min-[150px] items-center">
                 <div class="flex justify-center">
-                  <img class="w-[140px] mb-7" src="images/member1.png" alt="Picture...">
+                  <img class="w-[120px] mb-7" src="images/member1.png" alt="Picture...">
                 </div>
                 <h1 class="text-2xl text-[#FFF] font-bold">Awlad Hossain</h1>
                 <p class="text-base text-[#FFF] font-medium">Fruits Expert</p>
@@ -409,7 +432,7 @@
               </div>
               <div class="min-w-[150px] items-center">
                 <div class="flex justify-center">
-                  <img class="w-[140px] mb-7" src="images/member2.png" alt="Picture....">
+                  <img class="w-[120px] mb-7" src="images/member2.png" alt="Picture....">
                 </div>
                 <h1 class="text-2xl text-[#FFF] font-bold">Safia Chowdhury</h1>
                 <p class="text-base text-[#FFF] font-medium">Fruits Expert</p>
@@ -421,7 +444,7 @@
               </div>
               <div class="min-w-[150px] justify-self-center items-center">
                 <div class="flex justify-center">
-                  <img class="w-[140px] mb-7" src="images/member3.png" alt="Picture....">
+                  <img class="w-[120px] mb-7" src="images/member3.png" alt="Picture....">
                 </div>
                 <h1 class="text-2xl text-[#FFF] font-bold">Rokib Hossain</h1>
                 <p class="text-base text-[#FFF] font-medium">Fruits Expert</p>
@@ -433,7 +456,7 @@
               </div>
               <div class="min-w-[150px] justify-center items-center">
                 <div class="flex justify-center">
-                  <img class="w-[140px] mb-7" src="images/member4.png" alt="Picture...">
+                  <img class="w-[120px] mb-7" src="images/member4.png" alt="Picture...">
                 </div>
                 <h1 class="text-2xl text-[#FFF] font-bold">Chaity</h1>
                 <p class="text-base text-[#FFF] font-medium">Fruits Expert</p>
@@ -448,6 +471,24 @@
         </div>
       </div>
     </section>
+    <!-- Why Choose Us Section  -->
+    <section>
+      <div class="lg:flex">
+        <!-- Left -->
+        <div>
+
+        </div>
+        <!-- Middle -->
+        <div>
+
+        </div>
+        <!-- Right -->
+        <div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Footer Section -->
@@ -461,7 +502,7 @@
         <h1 class="text-white text-4xl font-bold">Fruit Burst</h1>
       </div>
     </div>
-    <div class="text-white flex flex-wrap justify-center gap-4">
+    <div class="text-white flex flex-wrap justify-center gap-7">
       <a class="link link-hover">Home</a>
       <a class="link link-hover">About us</a> 
       <a class="link link-hover">Shop</a> 
